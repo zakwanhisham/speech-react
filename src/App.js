@@ -58,11 +58,13 @@ I can also open a link by asking me: Open *`
             .replace(/x/gi, "*");
 
           // Validate the math expression
+          // eslint-disable-next-line
           if (!/^\d+(\.\d+)?([\+\-\*\/]\d+(\.\d+)?)*$/.test(mathExpression)) {
             throw new Error("Invalid math expression");
           }
 
           // Evaluate the math expression
+          // eslint-disable-next-line
           const result = eval(mathExpression);
 
           // Format the result to two decimal places
@@ -85,6 +87,7 @@ I can also open a link by asking me: Open *`
   const microphoneRef = useRef(null);
 
   // create a new speech synthesis instance
+  /* eslint-disable */
   const synth = window.speechSynthesis;
   const [voices, setVoices] = useState([]);
   useEffect(() => {
@@ -93,6 +96,7 @@ I can also open a link by asking me: Open *`
     const enVoices = allVoices.filter((voice) => voice.lang === "en-US");
     setVoices(enVoices);
   }, []);
+  /* eslint-enable */
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
     return (
