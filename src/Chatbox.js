@@ -41,7 +41,7 @@ function ChatBox() {
           placeholder="Type your message here..."
           value={inputValue}
           onChange={handleInput}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyPress}
         />
         <button onClick={handleSend}>Send</button>
       </div>

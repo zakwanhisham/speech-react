@@ -140,6 +140,7 @@ The '*' are your prompt ;D`
     setIsSpeaking(true);
     utterance.onend = () => setIsSpeaking(false);
   };
+
   return (
     <div className="microphone-wrapper">
       <div className="mircophone-container">
