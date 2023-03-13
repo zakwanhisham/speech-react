@@ -78,7 +78,7 @@ I can also open a link by asking me: Open *`
       },
     },
     {
-      command: "command",
+      command: "instruction",
       callback: () => {
         setMessage(
           `Here are some of my command you can test:\n

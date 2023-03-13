@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 380px;
+  height: 400px;
   align-items: flex-end;
 }
 
@@ -25,7 +25,8 @@
 }
 
 .user-message {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000000;
+  opacity: 0.8;
   align-self: flex-end;
 }
 
