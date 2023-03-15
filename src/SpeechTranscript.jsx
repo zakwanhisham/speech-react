@@ -87,8 +87,7 @@ I can also open a link by asking me: Open *`,
         setMessage(
             `Here are some of my command you can test:\n
 Calculate *, What is your name, change background colour to *, reset background 
-colour, open *.\n
-The '*' are your prompt`,
+colour, open *.\n The '*' are your prompt`,
         );
       },
     },

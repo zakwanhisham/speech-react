@@ -39,32 +39,32 @@ export default function ChatBox() {
     }
   };
 
-  // const handleOpen = () => {
-  //   setIsOpen(true);
-  // };
+  /* const handleOpen = () => {
+    setIsOpen(true);
+  };
 
-  // const handleClose = () => {
-  //   setIsOpen(false);
-  // };
+  const handleClose = () => {
+    setIsOpen(false);
+  }; */
 
   return (
     <div className={`chatbox-container ${isOpen ? 'open' : 'closed'}`}>
-      {/* {!isOpen && ( */}
-      {/*   <div className="chatbox-avatar"> */}
-      {/*     <img src="./logo.svg" alt="placeholder logo" /> */}
-      {/*   </div> */}
-      {/* )} */}
-      {/* <div className="chatbox-header"> */}
-      {/*   <div className="chatbox-title">Chat</div> */}
-      {/*   <div className="chatbox-buttons"> */}
-      {/*     <button className="open-button" onClick={handleOpen}> */}
-      {/*       Open */}
-      {/*     </button> */}
-      {/*     <button className="close-button" onClick={handleClose}> */}
-      {/*       Close */}
-      {/*     </button> */}
-      {/*   </div> */}
-      {/* </div> */}
+      {/* {!isOpen && (
+        <div className="chatbox-avatar">
+          <img src="./logo.svg" alt="placeholder logo" />
+        </div>
+      )}
+      <div className="chatbox-header">
+        <div className="chatbox-title">Chat</div>
+        <div className="chatbox-buttons">
+          <button className="open-button" onClick={handleOpen}>
+            Open
+          </button>
+          <button className="close-button" onClick={handleClose}>
+            Close
+          </button>
+        </div>
+      </div> */}
       <div className="chatbox-history">
         {chatHistory.map((chat, index) => (
           <div
