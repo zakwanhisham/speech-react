@@ -33,11 +33,15 @@ export default function ChatBox() {
         case 'hello':
           botMessage.message = 'Hi there! I am Speech Bot';
           break;
-        case 'how are you?':
+        case 'how are you':
           botMessage.message = 'I\'m doing well, thanks for asking.';
           break;
-        case 'what is your name?':
+        case 'what is your name':
           botMessage.message = 'My name is Speech Bot';
+          break;
+        case 'what can you do':
+          botMessage.message = `You can press the microphone icon and say 
+'instruction'`;
           break;
         default:
           botMessage.message = `I'm sorry, I didn't understand what you said.`;
