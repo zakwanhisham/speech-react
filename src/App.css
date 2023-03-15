@@ -1,0 +1,7 @@
+.Heading-1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+}

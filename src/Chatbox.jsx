@@ -10,7 +10,7 @@ import './ChatBox.css';
 export default function ChatBox() {
   const [inputValue, setInputValue] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
-  // const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleInput = (event) => {
     setInputValue(event.target.value);
@@ -26,9 +26,23 @@ export default function ChatBox() {
     setInputValue('');
     setTimeout(() => {
       const botMessage = {
-        message: 'This is a bot response',
+        message: `I'm sorry, I didn't understand what you said.`,
         from: 'bot',
       };
+      switch (inputValue.trim().toLowerCase()) {
+        case 'hello':
+          botMessage.message = 'Hi there! I am Speech Bot';
+          break;
+        case 'how are you?':
+          botMessage.message = 'I\'m doing well, thanks for asking.';
+          break;
+        case 'what is your name?':
+          botMessage.message = 'My name is Speech Bot';
+          break;
+        default:
+          botMessage.message = `I'm sorry, I didn't understand what you said.`;
+          break;
+      }
       setChatHistory([...chatHistory, userMessage, botMessage]);
     }, 1000);
   };
@@ -39,17 +53,17 @@ export default function ChatBox() {
     }
   };
 
-  /* const handleOpen = () => {
+  const handleOpen = () => {
     setIsOpen(true);
   };
 
   const handleClose = () => {
     setIsOpen(false);
-  }; */
+  };
 
   return (
     <div className={`chatbox-container ${isOpen ? 'open' : 'closed'}`}>
-      {/* {!isOpen && (
+      {!isOpen && (
         <div className="chatbox-avatar">
           <img src="./logo.svg" alt="placeholder logo" />
         </div>
@@ -64,8 +78,7 @@ export default function ChatBox() {
             Close
           </button>
         </div>
-      </div> */}
-      <div className="chatbox-history">
+      </div>       <div className="chatbox-history">
         {chatHistory.map((chat, index) => (
           <div
             key={index}

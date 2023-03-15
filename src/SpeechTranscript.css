@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
 }
 .microphone-icon-container {
   width: 100px;
@@ -68,8 +68,7 @@ body {
 }
 .microphone-result-container {
   text-align: center;
-  height: 50vh;
-
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,7 +77,7 @@ body {
 }
 .microphone-result-text {
   margin-bottom: 30px;
-  width: 70vw;
+  width: 50vw;
   overflow-y: auto;
 }
 .microphone-reset {
