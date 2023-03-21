@@ -82,7 +82,8 @@ export default function ChatBox() {
             Close
           </button>
         </div>
-      </div>       <div className="chatbox-history">
+      </div>
+      <div className="chatbox-history">
         {chatHistory.map((chat, index) => (
           <div
             key={index}
